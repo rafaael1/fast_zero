@@ -1,14 +1,14 @@
 from http import HTTPStatus
 
 
-def test_read_root_deve_retornar_OK_e_ola_mundo(client):
+def test_read_root_should_return_OK_e_ola_mundo(client):
     response = client.get('/')  # Act
 
     assert response.status_code == HTTPStatus.OK  # assert
     assert response.json() == {'message': 'Olá Mundo'}  # assert
 
 
-def test_read_root_hello_deve_retornar_OK_e_ola_mundo(client):
+def test_read_root_hello_should_return_OK_e_ola_mundo(client):
     response = client.get('/hello')  # Act
 
     assert response.status_code == HTTPStatus.OK  # assert

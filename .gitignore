@@ -187,6 +187,9 @@ pyrightconfig.json
 # Built Visual Studio Code Extensions
 *.vsix
 
+# Database sqlite3
+database.db
+
 # End of https://www.toptal.com/developers/gitignore/api/python
 
 # Generated using ignr.py - github.com/Antrikshy/ignr.py
